@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <a href="./index.html">Back to main page</a>
+    <br>
+    <!-- Use GET, not POST --> 
+    <form action="" method="get">
+        <div>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname">
+        </div>
+        <div>
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="passwpord" name="password" required minlength="5">
+        </div>
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <div>
+            <p>Gender:</p>
+            <div>
+                <input type="radio" name="gender" id="male" value="male" checked> <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="nonbinary" value="nonbinary"> <label for="nonbinary">Non-binary</label>
+            </div>
+        </div>
+        <div>
+            <p>Pets</p>
+            <div>
+                <input type="checkbox" name="dog" id="dog"> <label for="dog">Dog</label>
+            </div>
+            <div>
+                <input type="checkbox" name="cat" id="cat"> <label for="cat">Cat</label>
+            </div>
+            <div>
+                <input type="checkbox" name="rabbit" id="rabbit"> <label for="rabbit">Rabbit</label>
+            </div>
+            <div>
+                <input type="checkbox" name="nopet" id="nopet"> <label for="nopet">None</label>
+            </div>
+        </div>
+        <div>
+            <label for="cars">Car:</label> <br>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="nissan">Nissan</option>
+                <option value="fiat">Fiat</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        
+    </form>
+</body>
+</html>
